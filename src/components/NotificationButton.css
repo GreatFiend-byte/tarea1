@@ -1,0 +1,47 @@
+.notification-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.notification-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.notification-btn.request {
+  background: linear-gradient(135deg, #ffd93d 0%, #ff9c3d 100%);
+  color: #333;
+}
+
+.notification-btn.send {
+  background: linear-gradient(135deg, #6bcf7f 0%, #4ca1af 100%);
+  color: white;
+}
+
+.notification-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.notification-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .notification-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .notification-btn {
+    justify-content: center;
+  }
+}
